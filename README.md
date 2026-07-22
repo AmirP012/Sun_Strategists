@@ -15,34 +15,11 @@ It represents a fictional corporation called **Aftab Rahkaran** — a digital ag
 - Practice **responsive design** (mobile-first approach)
 - Create a clean, accessible, and visually appealing UI
 
-aftab-rahkaran/
-│
-├── index.html # Main HTML file
-├── page2.html # Second page
-├── css/
-│ └── style.css # All styles (no frameworks)
-├── js/
-│ └── main.js # All interactivity
-├── images/
-│ ├── about-hero.jpg
-│ ├── customer1.jpg
-│ ├── customer2.jpg
-│ ├── customer3.jpg
-│ ├── hero1.jpg
-│ ├── hero2.jpg
-│ ├── intro.jpg
-│ ├── service1.jpg
-│ ├── service2.jpg
-│ ├── service3.jpg
-│ ├── team1.jpg
-│ ├── team2.jpg
-│ └── team3.jpg
-└── README.md
-
 ## 🚀 How to Run
 
 1. **Clone or download** this repository:
    ```bash
    git clone https://github.com/AmirP012/Sun_Strategists.git
 2. run the index.html
+
 *note : make sure all files are in one folder
