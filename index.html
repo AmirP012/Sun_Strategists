@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>شرکت راهکاران آفتاب | خدمات دیجیتال</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- =========================
+       Header / Navigation Bar
+       ========================= -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="بازگشت به صفحه اصلی">
+        <span class="brand__logo" aria-hidden="true">☀️</span>
+        <span class="brand__name">راهکاران آفتاب</span>
+        <span class="brand__tagline">تجربه دیجیتال، رشد واقعی</span>
+      </a>
+
+      <button class="navToggle" id="navToggle" aria-label="باز و بسته کردن منو" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link">خانه</a>
+        <a href="#services" class="nav__link">خدمات</a>
+        <a href="#about" class="nav__link">درباره ما</a>
+        <a href="#contact" class="nav__link">تماس</a>
+        <a href="page2.html" class="nav__link nav__link--cta">صفحه دوم</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- =========================
+         Hero Section (Slider)
+         ========================= -->
+    <section class="hero">
+      <div class="hero__slider" id="heroSlider" aria-label="اسلایدر معرفی شرکت">
+        <!-- Slide 1 -->
+        <article class="hero__slide is-active" data-bg="images/hero1.jpg" aria-hidden="false">
+          <div class="container hero__content">
+            <p class="hero__badge">راهکاران آفتاب</p>
+            <h1 class="hero__title">از ایده تا اجرا؛ کنار شما هستیم</h1>
+            <p class="hero__text">
+              طراحی سایت، برندینگ و رشد دیجیتال با تمرکز بر تجربه کاربری، سرعت و نتیجه.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">ثبت درخواست</a>
+              <a href="#services" class="btn btn--ghost">مشاهده خدمات</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="hero__slide" data-bg="images/hero2.jpg" aria-hidden="true">
+          <div class="container hero__content">
+            <p class="hero__badge">مشاوره رایگان</p>
+            <h2 class="hero__title">طراحی مدرن + سئو + عملکرد سریع</h2>
+            <p class="hero__text">
+              ساخت صفحات واکنش‌گرا و حرفه‌ای برای موبایل و دسکتاپ، کاملاً استاندارد و قابل ارائه در پروژه دانشگاهی.
+            </p>
+            <div class="hero__actions">
+              <a href="page2.html" class="btn btn--primary">آشنایی بیشتر</a>
+              <a href="#testimonials" class="btn btn--ghost">نظرات مشتریان</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slider Controls -->
+        <button class="sliderBtn sliderBtn--prev" id="heroPrev" aria-label="اسلاید قبلی">‹</button>
+        <button class="sliderBtn sliderBtn--next" id="heroNext" aria-label="اسلاید بعدی">›</button>
+
+        <div class="sliderDots" id="heroDots" aria-label="نشانگر اسلایدها"></div>
+
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <!-- =========================
+           Search Bar (IMPORTANT)
+           ========================= -->
+      <div class="container">
+        <section class="searchCard" aria-label="جستجو در سایت">
+          <div class="searchCard__text">
+            <h3>دنبال چه چیزی هستید؟</h3>
+            <p>برای نمونه، «طراحی سایت»، «سئو»، «برندینگ»…</p>
+          </div>
+
+          <form class="searchForm" id="searchForm" novalidate>
+            <label class="srOnly" for="searchInput">عبارت جستجو</label>
+            <input id="searchInput" class="input" type="text" placeholder="عبارت را وارد کنید…" />
+            <button class="btn btn--primary" type="submit">جستجو</button>
+            <p class="formHint" id="searchMsg" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <!-- =========================
+         Services Section
+         ========================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="sectionHeader">
+          <h2 class="sectionTitle">خدمات شرکت</h2>
+          <p class="sectionDesc">سه خدمت اصلی ما برای شروع یک حضور دیجیتال قوی.</p>
+        </header>
+
+        <div class="cardsGrid">
+          <article class="card">
+            <img class="card__img" src="images/service1.jpg" alt="طراحی سایت" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22380%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23e9eef5%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23445%22 font-family=%22Tahoma%22 font-size=%2224%22>تصویر خدمات</text></svg>';">
+            <div class="card__body">
+              <h3 class="card__title">طراحی وب‌سایت</h3>
+              <p class="card__text">طراحی واکنش‌گرا با تمرکز بر تجربه کاربری و استانداردهای روز.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="images/service2.jpg" alt="سئو و بهینه‌سازی" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22380%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23e9eef5%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23445%22 font-family=%22Tahoma%22 font-size=%2224%22>تصویر خدمات</text></svg>';">
+            <div class="card__body">
+              <h3 class="card__title">سئو و بهینه‌سازی</h3>
+              <p class="card__text">بهبود سرعت، ساختار و محتوا برای رتبه بهتر و جذب مخاطب واقعی.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card__img" src="images/service3.jpg" alt="برندینگ دیجیتال" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22380%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23e9eef5%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23445%22 font-family=%22Tahoma%22 font-size=%2224%22>تصویر خدمات</text></svg>';">
+            <div class="card__body">
+              <h3 class="card__title">برندینگ و محتوا</h3>
+              <p class="card__text">ساخت هویت برند، لحن محتوا و مسیر ارتباطی یکپارچه با مخاطب.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Company Introduction
+         ========================= -->
+    <section class="section section--alt" id="about">
+      <div class="container split">
+        <div class="split__text">
+          <h2 class="sectionTitle">معرفی شرکت</h2>
+          <p class="sectionDesc">
+            شرکت «راهکاران آفتاب» از سال ۱۳۹۹ با هدف ارائه خدمات طراحی وب و رشد دیجیتال شکل گرفت.
+            ماموریت ما ساده است: ساخت تجربه‌های آنلاین سریع، زیبا و کاربردی که واقعاً به رشد کسب‌وکار کمک کند.
+          </p>
+
+          <div class="logosRow" aria-label="فناوری‌ها و ابزارها">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">UI/UX</span>
+            <span class="pill">SEO</span>
+          </div>
+
+          <a class="btn btn--primary" href="page2.html">درباره ما بیشتر بدانید</a>
+        </div>
+
+        <div class="split__media">
+          <img class="mediaImg" src="images/intro.jpg" alt="تصویر معرفی شرکت" loading="lazy"
+               onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22500%22><defs><linearGradient id=%22g%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22><stop stop-color=%22%23f4f7fb%22/><stop offset=%221%22 stop-color=%22%23e7eef7%22/></linearGradient></defs><rect width=%22100%25%22 height=%22100%25%22 fill=%22url(%23g)%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23445%22 font-family=%22Tahoma%22 font-size=%2224%22>تصویر معرفی</text></svg>';">
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Statistics Section (Animated counters)
+         ========================= -->
+    <section class="section" aria-label="آمار شرکت">
+      <div class="container">
+        <header class="sectionHeader">
+          <h2 class="sectionTitle">آمار در یک نگاه</h2>
+          <p class="sectionDesc">اعداد زیر به صورت انیمیشنی با جاوااسکریپت افزایش پیدا می‌کنند.</p>
+        </header>
+
+        <div class="statsGrid" id="stats">
+          <div class="stat">
+            <p class="stat__num" data-count="240">0</p>
+            <p class="stat__label">پروژه انجام‌شده</p>
+          </div>
+          <div class="stat">
+            <p class="stat__num" data-count="180">0</p>
+            <p class="stat__label">مشتری راضی</p>
+          </div>
+          <div class="stat">
+            <p class="stat__num" data-count="9800">0</p>
+            <p class="stat__label">ساعت تجربه کاری</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Team Section
+         ========================= -->
+    <section class="section section--alt" aria-label="تیم ما">
+      <div class="container">
+        <header class="sectionHeader">
+          <h2 class="sectionTitle">تیم راهکاران آفتاب</h2>
+          <p class="sectionDesc">ترکیبی از طراحی، توسعه و تحلیل برای نتیجه بهتر.</p>
+        </header>
+
+        <div class="teamGrid">
+          <article class="teamCard">
+            <img class="avatar" src="images/team1.jpg" alt="مینا رضایی" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22240%22><circle cx=%22120%22 cy=%22120%22 r=%22120%22 fill=%22%23e9eef5%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23445%22 font-family=%22Tahoma%22 font-size=%2218%22>پروفایل</text></svg>';">
+            <h3 class="teamCard__name">مینا رضایی</h3>
+            <p class="teamCard__role">طراح UI/UX</p>
+            <p class="teamCard__desc">طراحی تجربه کاربری و رابط‌های مدرن با تمرکز بر سادگی و دسترس‌پذیری.</p>
+          </article>
+
+          <article class="teamCard">
+            <img class="avatar" src="images/team2.jpg" alt="علی محمدی" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22240%22><circle cx=%22120%22 cy=%22120%22 r=%22120%22 fill=%22%23e9eef5%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23445%22 font-family=%22Tahoma%22 font-size=%2218%22>پروفایل</text></svg>';">
+            <h3 class="teamCard__name">علی محمدی</h3>
+            <p class="teamCard__role">توسعه‌دهنده فرانت‌اند</p>
+            <p class="teamCard__desc">پیاده‌سازی صفحات واکنش‌گرا، بهینه‌سازی عملکرد و تعاملات با JavaScript.</p>
+          </article>
+
+          <article class="teamCard">
+            <img class="avatar" src="images/team3.jpg" alt="نگار شریفی" loading="lazy"
+                 onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22240%22><circle cx=%22120%22 cy=%22120%22 r=%22120%22 fill=%22%23e9eef5%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23445%22 font-family=%22Tahoma%22 font-size=%2218%22>پروفایل</text></svg>';">
+            <h3 class="teamCard__name">نگار شریفی</h3>
+            <p class="teamCard__role">کارشناس سئو</p>
+            <p class="teamCard__desc">تحلیل محتوا و ساختار سایت برای افزایش بازدید هدفمند و بهبود رتبه.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Testimonials (JS carousel)
+         ========================= -->
+    <section class="section" id="testimonials" aria-label="نظرات مشتریان">
+      <div class="container">
+        <header class="sectionHeader">
+          <h2 class="sectionTitle">نظرات مشتریان</h2>
+          <p class="sectionDesc">اسلایدر نظرات با جاوااسکریپت (بدون کتابخانه).</p>
+        </header>
+
+        <div class="tCarousel" id="tCarousel">
+          <div class="tTrack" id="tTrack">
+            <article class="tItem is-active" aria-hidden="false">
+              <div class="tHeader">
+                <img class="tAvatar" src="images/customer1.jpg" alt="مشتری ۱" loading="lazy"
+                     onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><circle cx=%2240%22 cy=%2240%22 r=%2240%22 fill=%22%23e9eef5%22/></svg>';">
+                <div>
+                  <p class="tName">سحر کریمی</p>
+                  <p class="tMeta">مدیر فروش | شرکت بهین‌کالا</p>
+                </div>
+              </div>
+              <p class="tQuote">«طراحی سایت دقیقاً مطابق نیاز ما انجام شد و سرعت تحویل عالی بود.»</p>
+            </article>
+
+            <article class="tItem" aria-hidden="true">
+              <div class="tHeader">
+                <img class="tAvatar" src="images/customer2.jpg" alt="مشتری ۲" loading="lazy"
+                     onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><circle cx=%2240%22 cy=%2240%22 r=%2240%22 fill=%22%23e9eef5%22/></svg>';">
+                <div>
+                  <p class="tName">امیر حسینی</p>
+                  <p class="tMeta">بنیان‌گذار | استارتاپ هومینو</p>
+                </div>
+              </div>
+              <p class="tQuote">«ساده، حرفه‌ای و واکنش‌گرا. دقیقاً چیزی که برای ارائه دانشگاهی هم لازم داشتم.»</p>
+            </article>
+
+            <article class="tItem" aria-hidden="true">
+              <div class="tHeader">
+                <img class="tAvatar" src="images/customer3.jpg" alt="مشتری ۳" loading="lazy"
+                     onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2280%22 height=%2280%22><circle cx=%2240%22 cy=%2240%22 r=%2240%22 fill=%22%23e9eef5%22/></svg>';">
+                <div>
+                  <p class="tName">الهام موسوی</p>
+                  <p class="tMeta">کارآفرین</p>
+                </div>
+              </div>
+              <p class="tQuote">«فرم‌ها و اعتبارسنجی‌ها عالی بودند و تجربه کاربری حس خوبی می‌داد.»</p>
+            </article>
+          </div>
+
+          <button class="sliderBtn sliderBtn--prev" id="tPrev" aria-label="نظر قبلی">‹</button>
+          <button class="sliderBtn sliderBtn--next" id="tNext" aria-label="نظر بعدی">›</button>
+          <div class="sliderDots" id="tDots" aria-label="نشانگر نظرات"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Contact / Request Form (VERY IMPORTANT)
+         ========================= -->
+    <section class="section section--alt" id="contact" aria-label="فرم درخواست">
+      <div class="container">
+        <header class="sectionHeader">
+          <h2 class="sectionTitle">فرم درخواست / تماس</h2>
+          <p class="sectionDesc">اعتبارسنجی کامل با جاوااسکریپت + ذخیره اختیاری در LocalStorage.</p>
+        </header>
+
+        <form class="form" id="requestForm" novalidate>
+          <!-- NOTE: استفاده از novalidate برای اینکه اعتبارسنجی اختصاصی JS اجرا شود. -->
+
+          <div class="formGrid">
+            <div class="field">
+              <label for="firstName">نام *</label>
+              <input id="firstName" class="input" type="text" placeholder="مثلاً: رضا"/>
+              <small class="error" data-for="firstName"></small>
+            </div>
+
+            <div class="field">
+              <label for="lastName">نام خانوادگی *</label>
+              <input id="lastName" class="input" type="text" placeholder="مثلاً: احمدی"/>
+              <small class="error" data-for="lastName"></small>
+            </div>
+
+            <div class="field">
+              <label for="mobile">شماره موبایل *</label>
+              <input id="mobile" class="input" type="tel" placeholder="مثلاً: 09123456789"/>
+              <small class="error" data-for="mobile"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">ایمیل *</label>
+              <input id="email" class="input" type="email" placeholder="مثلاً: example@mail.com"/>
+              <small class="error" data-for="email"></small>
+            </div>
+
+            <div class="field">
+              <label for="company">نام شرکت</label>
+              <input id="company" class="input" type="text" placeholder="اختیاری"/>
+              <small class="error" data-for="company"></small>
+            </div>
+
+            <div class="field">
+              <label for="type">نوع درخواست *</label>
+              <select id="type" class="input">
+                <option value="">انتخاب کنید…</option>
+                <option value="web">طراحی وب‌سایت</option>
+                <option value="seo">سئو و بهینه‌سازی</option>
+                <option value="brand">برندینگ و محتوا</option>
+                <option value="consult">مشاوره</option>
+              </select>
+              <small class="error" data-for="type"></small>
+            </div>
+
+            <div class="field field--full">
+              <label for="message">متن پیام *</label>
+              <textarea id="message" class="input" rows="5" placeholder="حداقل ۱۰ کاراکتر بنویسید…"></textarea>
+              <small class="error" data-for="message"></small>
+            </div>
+          </div>
+
+          <div class="formActions">
+            <button class="btn btn--primary" type="submit">ارسال درخواست</button>
+            <button class="btn btn--ghost" type="reset">پاک کردن</button>
+            <p class="formHint" id="formMsg" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <!-- Simple modal (optional, but academic-safe) -->
+        <div class="modal" id="successModal" aria-hidden="true" role="dialog" aria-label="پیام موفقیت">
+          <div class="modal__backdrop" data-close="true"></div>
+          <div class="modal__content">
+            <h3>درخواست شما ثبت شد ✅</h3>
+            <p>با تشکر! اطلاعات شما با موفقیت دریافت شد. (نمونه پروژه بدون بک‌اند)</p>
+            <button class="btn btn--primary" id="closeModal">بستن</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       Footer
+       ========================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h3 class="footer__title">راهکاران آفتاب</h3>
+        <p class="footer__text">
+          ارائه‌دهنده خدمات طراحی وب، سئو و برندینگ. این سایت یک پروژه فرانت‌اند (بدون بک‌اند) است و به صورت آفلاین اجرا می‌شود.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer__title">اطلاعات تماس</h3>
+        <ul class="footer__list">
+          <li>آدرس: تهران، خیابان نمونه، پلاک ۱۲</li>
+          <li>تلفن: 021-12345678</li>
+          <li>ایمیل: info@aftabco.ir</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__title">خبرنامه</h3>
+        <form id="newsletterForm" class="newsletter" novalidate>
+          <label class="srOnly" for="newsletterEmail">ایمیل خبرنامه</label>
+          <input id="newsletterEmail" class="input" type="email" placeholder="ایمیل شما…"/>
+          <button class="btn btn--ghost" type="submit">عضویت</button>
+          <small class="formHint" id="newsletterMsg" aria-live="polite"></small>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> راهکاران آفتاب — تمامی حقوق محفوظ است.</p>
+      <a class="toTop" href="#top">بازگشت به بالا ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
